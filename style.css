@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+body {
+    background:linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%)), url(img/bg-pattern-desktop.svg);
+    font-family: 'Kumbh Sans', sans-serif;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    padding: 6rem 6rem 6rem 0;
+    border-radius: 12px;
+    box-shadow: 0 40px 80px 4px #b9b9b9;
+    box-shadow: 0 8px 80px -20px #3a3a3a;
+    background-image: url("img/bg-pattern-desktop.svg");
+    background-color: #cccccc;
+    background-position: -180px -40px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.content-1 {
+    position: relative;
+}
+
+.illus {
+    position: absolute;
+    left: -60px;
+    overflow: hidden;
+}
+
+.box {
+    position: absolute;
+    top: 30%;
+    right: -5rem;
+}
+
+.content-2 {
+    flex-basis: 50%;
+}
+
+
+.faq-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-style: solid;
+    border-bottom-color: hsl(240, 5%, 91%);
+    border-bottom-width: 1px;
+    cursor: pointer;
+}
+
+.faq p {
+    display: none;
+   
+    
+}
+
+.faq-q {
+    flex-basis: 80%;
+}
+
+p.active {
+    display: block;
+
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+.fa-angle-down {
+    color: orange;
+}
+
+@media(max-width: 1280px){
+    .container {
+        width: 80%;
+        padding: 6rem 3rem 6rem 0;
+    }
+
+  
+}
+
+@media(max-width: 1000px){
+    .container {
+        width: 85%;
+        padding: 6rem 3rem 6rem 0;
+        background-position: -280px -40px;
+    }
+
+    .content-1 {
+        position: relative;
+    }
+
+    .illus {
+        width: 380px;
+        height: auto;
+        top: 10%;
+        left: -40px;
+    }
+
+}
+
+@media(max-width: 800px){
+    .container {
+        width: 90%;
+        background-position: -380px -40px;
+    }
+
+    .illus {
+        width: 320px;
+        top: 30%;
+        left: -30px;
+    }
+
+}
+@media(max-width: 767px){
+    .container {
+        width: 85%;
+        display: block;
+        padding: 6rem 3rem 6rem 3rem;
+        box-sizing: border-box;
+    }
+
+    .illus {
+        width: 320px;
+        height: auto;
+        top: -240px;
+        left: 100px;
+    }
+
+    .content-2 h1 {
+        text-align: center;
+    }
+
+    .box {
+        width: 30%;
+        top: -140px;
+        left: 35px;
+    }
+
+}
+@media(max-width: 480px){
+
+    .illus {
+        top: -240px;
+        left: -5px;
+    }
+
+}
+
